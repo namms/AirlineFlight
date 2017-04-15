@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<style> 
+				.inputform{
+					        margin-top: 50px;
+							float:left;
+							margin-left:50px;
+							width:400px;
+							border:3px 
+							solid blue;
+							border-radius:20px;
+							padding:10px;
+				}
+				.inputform input,select{
+					width:200px;
+					float:right;
+
+
+				}
+				#month,#year{
+					width:100px;
+				} 
+				#submit {
+
+					margin-right:150px;
+					width:80px;
+				}
+	    </style>
+	   <title>Flight payment page</title>
+    </head>
+<body>
+	
+    <div class="inputform">
+	 <h2 class="design">Payment method</h2>
+	 <form >
+
+ 	 Card Number: <input type="text" name="cardnumber"><br/><br/>
+ 	 									
+  	 Card Type:
+  	 			<select name="cardtype">
+				<option>Visa</option>
+				<option>MasterCard</option>
+				<option>Discover</option>
+			</select><br/><br/>
+
+     Card Expiration Date:
+						    <select id = "month" name="month">
+								<option value="January">January</option>
+								<option value="Febuary">Febuary</option>
+								<option value="March">March</option>
+								<option value="April">April</option>
+								<option value="May">May</option>
+								<option value="June">June</option>
+								<option value="July">July</option>
+								<option value="August">August</option>
+								<option value="September">September</option>
+								<option value="October">October</option>
+								<option value="November">November</option>
+								<option value="December">December</option>
+							</select>
+							<select id = "year" name=“year”>
+								<option value=“2017”>2017</option>
+								<option value=“2018”>2018</option>
+								<option value=“2019”>2019</option>
+								<option value=“2020”>2020</option>
+								<option value=“2021”>2021</option>	
+							</select><br/><br/>
+  
+     Card Identification Number: </td><td><input type="text" name="cardidnumber"><br/><br/>
+
+     Card holder name:<input type="text" name="cardusername"><br/><br/>
+     </form>
+    
+     <hr>
+ 
+    <!--user address-->
+
+     <h3 class="design">Primary billing address</h3>
+     <form>
+ 	 Country: <select name="country">
+  	            <option>USA</option>
+				<option>INDIA</option>
+				<option>CHINA</option>
+				<option>GERMANY</option>
+				<option>JAPAN</option>
+				<option>UK</option>
+				</select>
+ 	 			<br/><br/>
+  	 Address Line 1: <input type="text" name="address1"><br/><br/>
+     
+     Address Line 2:  <input type="text" name="address2"><br/><br/>
+    
+     City: <input type="text" name="city"><br/><br/>
+      
+    
+     State: <select name="state">
+  	            <option>CA</option>
+				<option>TX</option>
+				<option>TN</option>
+				<option>NC</option>
+				<option>VA</option>
+				<option>WA</option>
+				</select><br/><br/>
+ 
+     Zip Code: <input type="text" name="zipcode"><br/><br/>
+     
+     <input  id="submit" type="submit" value="submit">
+      </form>
+    
+     </div>
+    </body>
+</html>
